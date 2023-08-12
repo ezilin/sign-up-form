@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+        <script src="./form.js" defer></script>
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="logo">
+                <div>Explorer</div>
+            </div>
+        </aside>
+        <div class="container">
+            <header>
+                <div class="text-container">
+                    <div class="puller">This is not a real online service! You know
+                        you need something like this in your life to help you realize
+                        your deepest dreams. Sign up <span class="italic">now</span>
+                        to get started.</div>
+                    <div class="finisher">You <span class="italic">know</span> you
+                        want to.</div>
+                </div>
+            </header>
+            <main>
+                <div class="motivator">Let's do this!</div>
+                <form action="/something" method="POST">
+                    <div class="inputs">
+                        <div class="group">
+                            <div class="field">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="field">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="text" id="phone-number" name="phone-number" 
+                                    pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" required placeholder="000-000-0000 format">
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="field">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="confirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm" name="confirm" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <div class="log-in">Already have an account? <a href="">Log in</a></div>
+            </main>
+        </div>
+    </body>
+</html>

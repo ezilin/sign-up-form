@@ -1,0 +1,140 @@
+:root {
+    font-family: Arial;
+    --main-color: #000126;
+    --sub-color: #003A4B;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    /*height: 100vh;*/
+    flex: 1 0 30vw;
+    background-image: url(stars.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 48px;
+    text-align: center;
+    background: rgb(0,0,0,0.4);
+    color: white;
+    padding: 20px;
+    margin-top: 40%;
+}
+
+.container {
+    width: 70vw;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+}
+
+header {
+    flex: 1 1 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    color: white;
+    background: linear-gradient(to top, var(--sub-color), var(--main-color));
+}
+
+.text-container {
+    margin: 60px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.puller {
+    margin-bottom: 30px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+main {
+    flex: 1 1 60%;
+    background: linear-gradient(to bottom, var(--sub-color), var(--main-color));
+}
+
+main .motivator {
+    color: white;
+    font-size: 28px;
+    margin: 0px 0px 30px 60px;
+    font-weight: bold;
+}
+
+form {
+    margin-left: 60px;
+}
+
+.inputs {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 30px;
+}
+
+.group {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 150px;
+}
+
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 30px;
+}
+
+[for] {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    font-size: 16px;
+    border: 3px solid #999998;
+    border-radius: 10px;
+}
+
+[type="submit"] {
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+div .log-in {
+    margin-top: 30px;
+    margin-left: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.log-in a:link {
+    text-decoration: none;
+    color: var(--sub-color);
+}
+
+.log-in a:visited {
+    color: var(--sub-color);
+}
